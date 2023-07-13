@@ -5,7 +5,15 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited{
+    color: white
 }
 
 .header{
@@ -16,8 +24,12 @@ body{
 
 .user-info {
     display: grid;
-    grid-template-columns: 1fr 1fr 5fr ;
+    grid-template-columns: 3fr 1fr 5fr ;
     align-content: center;
+}
+
+.user-info h4{
+    padding-left: 9%
 }
 
 .greeting{
@@ -26,8 +38,12 @@ body{
     grid-template-columns: 1fr 15fr;
 }
 
+.greeting img{
+    align-self: center;
+}
+
 .top-icon{
-    justify-self: center;
+    justify-self: end;
     align-self: center;
 }
 
@@ -40,8 +56,7 @@ body{
 .blue-buttons{
     display: grid;
     align-content: center;
-    grid-template-columns: 1fr 1fr 1fr ;
-    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .blue-buttons button{
@@ -50,18 +65,28 @@ body{
     height: 35px;
     border-radius: 30px;
     border: none;
+    cursor: pointer;
     color: white;
+}
+
+.blue-buttons button:hover{
+    color: rgb(2, 245, 205);
+    background-color: rgb(44, 18, 196);
 }
 
 input{
     width: 70%;
     border-radius: 25px;
+    align-self: center;
+    height: 30px;
+    border: none;
+    background-color: #008CBA;
 }
 
 .search{
-    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
 }
-
 
 .side-content{
     grid-row: 1 / 3;
@@ -79,18 +104,17 @@ input{
 
 .main{
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
     background: lightblue;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
 
 }
 
 .left{
+    grid-column: 1 / 2;
     display: grid;
     grid-template-rows: 1fr 10fr;
 }
-
 .left h3{
     margin-bottom: 0;
 }
@@ -112,7 +136,7 @@ input{
     color: black;
     text-align: left;
     padding-left: 15px;
-    height: 200px;
+    height: 220px;
     border-radius: 10px;
 }
 
@@ -129,10 +153,11 @@ input{
   }
 
 .left{
-    grid-column: 1 / 3;
+    grid-column: 1 / 2;
 }
 
 .right{
+    grid-column: 2 / 3;
     display: grid;
     padding-right: 15%;
     padding-bottom: 10%;
