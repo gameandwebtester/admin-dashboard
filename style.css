@@ -135,6 +135,7 @@ input{
     background-color: #f1f1ea;
     color: black;
     text-align: left;
+    border-left: 10px solid rgb(197, 43, 89);
     padding-left: 15px;
     height: 220px;
     border-radius: 10px;
