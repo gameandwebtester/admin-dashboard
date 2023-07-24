@@ -55,6 +55,7 @@ a:visited{
 
 .blue-buttons{
     display: grid;
+
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -63,6 +64,7 @@ a:visited{
     background-color: #008CBA;
     width: 100px;
     height: 35px;
+    margin: 5px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
